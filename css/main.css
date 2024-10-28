@@ -4,11 +4,18 @@
 
 
 
+:root {
+  --primary: rgb(8, 55, 8);
+}
 
-
+nav {
+  background-color: var(--primary);
+}
 .navbar-brand {
   color: #F6F3ED;
 }
+
+
 
 body {
   font-family: "Sarala", sans-serif;

@@ -5,12 +5,19 @@
 
 
 :root {
-  --primary: rgb(8, 55, 8);
+  --bs-body-bg: #F6F3ED;
+  --bg-primary: rgb(8, 60, 8);
+  --navbar-font-color: rgb(255, 255, 255);
+  --bs-light: #F6F3ED;
+
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
 }
 
-nav {
-  background-color: var(--primary);
+.navbar {
+  background-color: var(--bg-primary);
 }
+
 .navbar-brand {
   color: #F6F3ED;
 }
@@ -34,8 +41,74 @@ h1, h2, h3 {
   background-size: cover;
 }
 
+#hero h1 {
+  font-size: 1.953rem;
+  text-align: center;
+  padding-top: 2.5;
+  max-width: 750px;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+#hero p {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  max-width: 700px;
+  word-wrap: break-word;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 #hero .d-flex {
   height: 800px;
+}
+
+#options p{
+  max-width: 750px;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+#eat {
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left:  calc(var(--bs-gutter-x) / 2);
+}
+
+#eat h3{
+  font-size: 1.5rem;
+}
+
+#eat p {
+  font-size: small;
+  word-wrap: break-word;
+}
+
+#reviews {
+  background-color: var(--bg-primary);
+  color: var(--bs-light);
+}
+
+.blockquote-footer {
+  color: var(--bs-light);
+}
+
+.accordion {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--bg-primary);
+  color: var(--bs-light);
+}
+
+.btn:hover {
+  background-color: var(--bs-light);
+  color: var(--bg-primary);
 }
 
 #cta {
@@ -47,6 +120,40 @@ h1, h2, h3 {
 
 #cta .d-flex {
   height: 400px;
+}
+
+#cta h2 {
+  color: var(--bg-primary);
+  font-size: 1.5rem;
+}
+
+#cta .cta-button {
+  background-color: var(--bg-primary);
+  color: var(--bs-light);
+}
+
+.footer {
+  background-color: var(--bg-primary);
+  padding: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.text-brand {
+  color: var(--bs-light);
+  font-size: small;
+}
+
+.img-icon {
+  width: 20px;
+  height: auto;
+}
+
+social-icon {
+  width: 20px;
+  height: auto;
 }
 
 section:not(#hero):not(#cta){
